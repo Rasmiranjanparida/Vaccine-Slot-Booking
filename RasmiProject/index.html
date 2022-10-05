@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="userScript.js"></script>
+</head>
+
+<body style="background-color:   #d5f4e6">
+    <div class="container border mt-5" style="background-color:#F7CAC9">
+        <div class="display-4  text-danger text-center mb-5"><b><h3>USER
+                RESISTRATION FORM</h3> </b></div>
+        <form class="form-group" action="./admin.html" onsubmit="saveData()" method="POST">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label class="text-primary">Name</label> <input type="text" class="form-control" name="userName"
+                        id="userName" required="required">
+                </div>
+                <div class="col-sm-6">
+                    <label class="text-primary">Email</label> <input type="email" class="form-control" name="email"
+                        id="email" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label class="text-primary">Age</label> <input type="number" class="form-control" name="age"
+                        id="age" required="required">
+                </div>
+                <div class="col-sm-6">
+                    <label class="text-primary">Phone</label> <input type="text" class="form-control" name="phone"
+                        id="phone" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label class="text-primary">Adhar Number</label> <input type="text" class="form-control"
+                        name="adharNumber" id="adharNumber" required="required">
+                </div>
+                <div class="col-sm-6">
+                    <label class="text-primary">Date</label> <input type="date" class="form-control" name="dateOfUser"
+                        id="dateOfUser" required="required">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <label class="text-primary">Address</label> <textarea class="form-control" name="address"
+                        id="address" required="required"></textarea>
+                </div>
+
+
+
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4 mt-5">
+                   
+                    
+                    <input type="submit" value="save" class="btn btn-success">
+                
+        </form>
+    </div>
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
